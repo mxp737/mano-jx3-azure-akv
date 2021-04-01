@@ -37,7 +37,7 @@ jxRequirements:
     owner: mxp737
     repository: mano-jx3-azure-akv
   ingress:
-    domain: change.me
+    domain: 20.53.184.239.nip.io
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -tekton-pipelines.

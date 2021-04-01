@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - mxp737/mano-jx3-azure-akv
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.20.53.184.239.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null

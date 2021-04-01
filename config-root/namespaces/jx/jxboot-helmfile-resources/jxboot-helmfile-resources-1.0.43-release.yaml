@@ -1,0 +1,51 @@
+# Source: jxboot-helmfile-resources/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-04-01T09:56:46Z"
+  deletionTimestamp: null
+  name: 'jxboot-helmfile-resources-1.0.43'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 1.0.43
+      sha: 8f94598859fc5336c06e736bbc8d2cb2dcff75e0
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 02f10062bf36501a756bbcce7ce3534b9eb67153
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: add better upgrade CronJob
+
+        Signed-off-by: James Strachan <james.strachan@gmail.com>
+      sha: 9f955c814c0b3330f1108192c04863c4461322c5
+  gitHttpUrl: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
+  gitOwner: jenkins-x-charts
+  gitRepository: jxboot-helmfile-resources
+  name: 'jxboot-helmfile-resources'
+  releaseNotesURL: https://github.com/jenkins-x-charts/jxboot-helmfile-resources/releases/tag/v1.0.43
+  version: v1.0.43
+status: {}
