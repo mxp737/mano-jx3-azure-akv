@@ -20,12 +20,22 @@ jxRequirements:
     enabled: false
     schedule: ""
   cluster:
+    azure:
+      secretStorage:
+        keyVaultName: primary-beetle
+      storage:
+        storageAccountName: jxprimarybeetle
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    environmentGitOwner: mxp737
     gitKind: github
     gitName: github
     gitServer: https://github.com
     provider: aks
+    registry: primarybeetle.azurecr.io
   environments:
   - key: dev
+    owner: mxp737
+    repository: mano-jx3-azure-akv
   ingress:
     domain: change.me
     externalDNS: false
@@ -35,8 +45,13 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: mano-bot
   repository: nexus
   secretStorage: azurekeyvault
+  storage:
+  - name: logs
+    url: azblob://logs
   vault: {}
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
